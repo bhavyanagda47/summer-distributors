@@ -27,7 +27,7 @@
   <div class="inner">
     <a class="brand" href="index.html">
       <img src="assets/images/logo.png" alt="SDL" />
-      <span class="wordmark">${C.legalName || "Summer Distributors Limited"}<small>Meru · ${C.kiswahili.pricesOnRequest}</small></span>
+      <span class="wordmark">${C.legalName || "Summer Distributors Limited"}<small>Meru</small></span>
     </a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
     <nav class="primary" id="primary-nav">
