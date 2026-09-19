@@ -7,7 +7,7 @@
 window.SDL = {
   legalName: "Summer Distributors Limited",
   shortName: "Summer Distributors",
-  tagline: "FMCG for shops across Meru County",
+  tagline: "Household Items and Foodstuffs",
 
   /* --- fill these when you have them --- */
   phone: "",                 // e.g. "+254 7xx xxx xxx"
