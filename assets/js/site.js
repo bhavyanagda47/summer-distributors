@@ -29,17 +29,13 @@
       <img src="assets/images/logo.png" alt="SDL" />
       <span class="wordmark">${C.legalName || "Summer Distributors Limited"}<small>Meru</small></span>
     </a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
     <nav class="primary" id="primary-nav">
       <a href="what-we-carry.html"${current("carry")}>What we carry</a>
       <a href="how-we-work.html"${current("how")}>How we work</a>
       <a href="about.html"${current("about")}>About</a>
       <a href="contact.html"${current("contact")}>Contact</a>
     </nav>
-    <a class="btn btn-primary btn-stack btn-quote" href="contact.html">
-      Request a quote
-      <span class="sw">${C.kiswahili.quoteButton}</span>
-    </a>
+    <a class="btn btn-primary btn-quote" href="contact.html">Request a quote</a>
   </div>
 </header>`;
   }
@@ -78,13 +74,6 @@
   /* Inject chrome */
   document.body.insertAdjacentHTML("afterbegin", header());
   document.body.insertAdjacentHTML("beforeend", footer() + floatWa());
-
-  const head = document.getElementById("site-header");
-  const tog = head.querySelector(".menu-toggle");
-  tog.addEventListener("click", () => {
-    const open = head.classList.toggle("is-open");
-    tog.setAttribute("aria-expanded", open ? "true" : "false");
-  });
 
   /* Fill [data-sdl="key"] text nodes */
   document.querySelectorAll("[data-sdl]").forEach((node) => {
