@@ -73,7 +73,7 @@ h1, h2, h3, h4,
   text-decoration: none;
 }
 .brand:hover { text-decoration: none; }
-.brand img { height: 44px; width: auto; background: var(--indigo); }
+.brand img { height: 44px; width: auto; }
 .wordmark {
   font-weight: 600;
   font-size: 15px;
@@ -91,6 +91,7 @@ h1, h2, h3, h4,
 
 nav.primary {
   display: flex;
+  align-items: center;
   gap: 18px;
   margin-left: auto;
   font-size: 14px;
@@ -143,6 +144,20 @@ nav.primary a[aria-current="page"] {
   flex-direction: column;
   padding: 8px 16px 7px;
   gap: 1px;
+}
+
+/* Quote button: ignore nav underline/padding so it sits in the header middle */
+.site-header .btn-quote,
+nav.primary .btn {
+  align-self: center;
+  margin: 0;
+  border-bottom: 0;
+  flex-shrink: 0;
+}
+nav.primary a.btn:hover,
+nav.primary a.btn[aria-current="page"] {
+  border-bottom-color: transparent;
+  filter: brightness(1.08);
 }
 
 .menu-toggle {
@@ -369,9 +384,23 @@ form.quote {
   justify-content: center;
   box-shadow: 0 4px 16px rgba(18, 140, 126, 0.45);
   text-decoration: none;
+  line-height: 0;
 }
 .float-wa:hover { text-decoration: none; filter: brightness(1.06); }
-.float-wa svg { width: 30px; height: 30px; fill: #083b22; }
+.float-wa svg {
+  width: 28px;
+  height: 28px;
+  display: block;
+  flex-shrink: 0;
+  fill: #083b22;
+  transform: translateY(1px);
+}
+.float-wa img {
+  width: 28px;
+  height: 28px;
+  display: block;
+  object-fit: contain;
+}
 .float-wa span.sr {
   position: absolute;
   width: 1px;
@@ -388,6 +417,7 @@ form.quote {
   .site-header.is-open nav.primary {
     display: flex;
     flex-direction: column;
+    align-items: stretch;
     position: absolute;
     left: 0; right: 0; top: 100%;
     background: var(--cream);
@@ -396,6 +426,11 @@ form.quote {
     gap: 0;
   }
   .site-header.is-open nav.primary a { padding: 10px 0; }
+  .site-header.is-open nav.primary .btn,
+  .site-header.is-open .btn-quote {
+    align-self: flex-start;
+    margin-top: 8px;
+  }
   .site-header .inner { flex-wrap: wrap; }
   .site-header .btn-quote { padding: 8px 10px; font-size: 12px; }
   .cards, .steps, .two { grid-template-columns: 1fr; }
