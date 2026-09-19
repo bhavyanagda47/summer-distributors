@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Summer Distributors Limited</title>
+  <meta name="description" content="Request a quote. Depot in Meru. WhatsApp any day. Reply by the next business day." />
+  <link rel="icon" href="assets/images/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="contact">
+  <main>
+    <section class="hero">
+      <h1>Request a quote</h1>
+      <p class="sw"><span data-kiswahili="contactUs">Wasiliana nasi</span>. <span data-kiswahili="pricesOnRequest">Bei kwa ombi</span>.</p>
+      <p>Send the list. We reply by the next business day.</p>
+    </section>
+
+    <section class="section">
+      <div class="two">
+        <div>
+          <div class="meta" id="contact-details"></div>
+          <form class="quote" id="quote-form" style="margin-top:24px">
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" name="name" required autocomplete="name" />
+            </div>
+            <div class="form-row">
+              <label for="shop">Shop / business</label>
+              <input id="shop" name="shop" required />
+            </div>
+            <div class="form-row">
+              <label for="town">Town and county</label>
+              <input id="town" name="town" required placeholder="e.g. Maua, Meru County" />
+            </div>
+            <div class="form-row">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" />
+            </div>
+            <div class="form-row">
+              <label for="need">What you need</label>
+              <textarea id="need" name="need" required placeholder="List, packs, rough quantities"></textarea>
+            </div>
+            <button class="btn btn-primary btn-stack" type="submit">Send quote request<span class="sw">Omba bei</span></button>
+            <p class="form-note">Until WhatsApp or email is set in config.js, this form will tell you to add them. After that it opens WhatsApp (or mail) with the list filled in.</p>
+            <!-- V2: set v2.formEndpoint to a Formspree URL to POST instead of WhatsApp. -->
+          </form>
+        </div>
+        <div>
+          <img class="cover" src="assets/images/photo-depot-exterior.jpg" alt="Depot — replace with your building" />
+          <p class="form-note" style="margin:10px 0 14px">Match this building. Replace the photo when you have the real face of the depot.</p>
+          <iframe id="map-embed" class="map-frame" title="Meru map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Meru%20Kenya&z=13&output=embed"></iframe>
+          <p class="form-note" style="margin-top:8px">Pin is Meru town until you change <code>mapQuery</code> in config.js to the street.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>

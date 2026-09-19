@@ -1,0 +1,54 @@
+{
+  "legalName": "Summer Distributors Limited",
+  "shortName": "Summer Distributors",
+  "tagline": "FMCG for shops across Meru County",
+
+  "phone": "",
+  "whatsapp": "",
+  "whatsappLink": "https://wa.me/254XXXXXXXXX",
+  "email": "",
+  "addressLines": [],
+  "mapEmbed": "",
+
+  "hoursDepot": "Monday–Saturday",
+  "hoursWhatsapp": "Any day",
+
+  "baseTown": "Meru",
+  "counties": [
+    "Meru County",
+    "Tharaka Nithi County",
+    "Laikipia County",
+    "Isiolo County"
+  ],
+
+  "yearsApprox": 25,
+  "quoteSla": "next business day",
+
+  "payment": ["M-Pesa", "cash", "credit"],
+
+  "categories": [
+    { "id": "cat-1", "name": "Category 1", "blurb": "Replace this line with a short description." },
+    { "id": "cat-2", "name": "Category 2", "blurb": "Replace this line with a short description." },
+    { "id": "cat-3", "name": "Category 3", "blurb": "Replace this line with a short description." },
+    { "id": "cat-4", "name": "Category 4", "blurb": "Replace this line with a short description." },
+    { "id": "cat-5", "name": "Category 5", "blurb": "Replace this line with a short description." },
+    { "id": "cat-6", "name": "Category 6", "blurb": "Replace this line with a short description." }
+  ],
+
+  "kiswahili": {
+    "quoteButton": "Omba bei",
+    "whatsappButton": "WhatsApp",
+    "homeLine": "Tunahudumia biashara katika kaunti za Meru, Tharaka Nithi, Laikipia na Isiolo.",
+    "pricesOnRequest": "Bei kwa ombi",
+    "contactUs": "Wasiliana nasi"
+  },
+
+  "notes": {
+    "phoneEmailAddress": "Leave blank until launch. One change in this file should update every page.",
+    "deliveryMethod": "Not published yet.",
+    "moq": "Not published.",
+    "brands": "Not named until you supply a list.",
+    "whoMayOrder": "Do not put a ‘who can order’ sentence on the site.",
+    "photos": "Empty slots. Add later."
+  }
+}
