@@ -197,7 +197,3 @@ Have someone who uses it every day read those before you call it done.
 ## 10. Colours and type (if you must)
 
 `assets/css/style.css` — `--indigo: #312682` matches the logo. Do not switch it back to dusty slate. Fonts load from Google; if a shop has no data they get a system serif/sans.
-
----
-
-Questions this folder already answers: separate pages (yes), one quote CTA (yes), WhatsApp always (yes), empty contacts (yes), photos as stand-ins (yes). Fill `whatsapp` first — that is the button people will actually tap.
